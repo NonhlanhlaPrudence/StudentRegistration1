@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StudentServiceService } from './services/student-service.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'y';
+  title = 'Student Registration';
+
+  constructor(private service: StudentServiceService ){ 
+
+    
+  }
 }
