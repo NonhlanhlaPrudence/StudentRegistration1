@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import{HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,12 +8,18 @@ import { RegistrationComponent } from './registration/registration.component';
 import {FormsModule} from '@angular/forms'
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import{ReactiveFormsModule} from '@angular/forms';
+
+import{NgbModule} from '@ng-bootstrap/ng-bootstrap';
+//import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RegistrationComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+  //  CUSTOM_ELEMENTS_SCHEMA[]
+
   ],
   imports: [
     BrowserModule,
@@ -21,6 +27,7 @@ import{ReactiveFormsModule} from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgbModule
     
   ],
 

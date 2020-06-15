@@ -14,8 +14,9 @@ export class StudentDetailsComponent implements OnInit {
 
 getData()
 {
-    this.service.getDetails().subscribe((data)=> {console.log(data)
-      this.details = data
+    this.service.getDetails().subscribe((data)=> {
+      console.log(data)
+      //this.details = data
     })
 
     

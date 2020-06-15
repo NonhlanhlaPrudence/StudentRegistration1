@@ -1,14 +1,34 @@
-<h1> Student Details</h1>
+<!--<h1> Student Details</h1>
 
-
-<div  *ngFor="let service of details">
-    <u>
-        <li> Name: {{service.name}}</li>
-        <li> ID: {{service.id}}</li>
+<table  class="table table-bordered table-responsive-md table-striped text-center">
+    <thead>
+      <tr>
+        <th class="text-center"> Name</th>
+        <th class="text-center">Email</th>
+        <th class="text-center">ID</th>
+        <th class="text-center">Module</th>
+        <th class="text-center">Date Created</th>
+        <th class="text-center">Date Edited</th>
+        
        
-      
-    </u>
- 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="pt-3-half" contenteditable="true">{{service.name}}</td>
+        <td class="pt-3-half" contenteditable="true">{{service.email}}</td>
+        <td class="pt-3-half" contenteditable="true">{{service.idNumber}}</td>
+        <td class="pt-3-half" contenteditable="true">{{service.modules}}</td>
+        <td class="pt-3-half" contenteditable="true">{{service.dateRegistered}}</td>
+        <td class="pt-3-half" contenteditable="true">{{service.dateModified}}</td>
+       
+
+</tr>
+</tbody>
+</table>
+
+-->
+
+<div *ngFor= "let service of details" >
+  {{service.name}}
 </div>
-
-
